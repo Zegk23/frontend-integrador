@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  img.logo {
+    width: 150px !important;
+    height: 60px !important;
+  }
+  
+  svg:hover, span:hover {
+    cursor: pointer;
+  }
+  
+  /* Media Queries */
+  
+  /* Tamaño del logo en pantallas medianas (tablets) */
+  @media (max-width: 768px) {
+    img.logo {
+      width: 100px !important;
+      height: 60px !important;
+    }
+  }
+  
+  /* Tamaño del logo en pantallas pequeñas (móviles) */
+  @media (max-width: 576px) {
+    img.logo {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  
+  /* Ajustes de la sidebar y otros elementos en pantallas medianas y pequeñas */
+  @media (max-width: 991px) {
+    .sidebar {
+      width: 75%;
+      height: 100vh;
+      background-color: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(10px);
+      color: white;
+      z-index: 1050;
+      overflow-y: auto;
+    }
+  
+    .d-flex.justify-content-center.align-items-center.gap-3.mx-4 {
+      margin-top: 20px;
+      flex-direction: column;
+      align-items: flex-start;
+      padding-left: 15px;
+    }
+  
+    #logo {
+      margin: 0 !important;
+    }
+  }
+  
